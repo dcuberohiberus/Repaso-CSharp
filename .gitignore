@@ -1,41 +1,39 @@
-# Prerequisites
-*.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Archivos de Visual Studio
+.vs/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Carpetas de compilación
+bin/
+obj/
 
-# Linker files
-*.ilk
+# Archivos de usuario
+*.user
+*.suo
 
-# Debugger Files
-*.pdb
+# Archivos de configuración local
+*.userosscache
+*.sln.docstates
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Paquetes NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuget.props
+*.nuget.targets
 
-# Fortran module files
-*.mod
-*.smod
+# Logs
+*.log
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Archivos generados por herramientas
+Generated\ Files/
 
-# Executables
-*.exe
-*.out
-*.app
+# Configuración de Rider/JetBrains
+.idea/
 
-# debug information files
-*.dwo
+# Archivos de publicación
+publish/
+
+# Archivos de cobertura
+*.coverage
+*.coveragexml
+
