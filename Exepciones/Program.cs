@@ -99,7 +99,6 @@ internal class Program
 
         //-- =======================
         //--  24  Exceptions III. Conflicts several exceptions, capture with filters.
-        
         //-- =======================
         Console.WriteLine("Adivina el número entre 1 y 100:");
         do
