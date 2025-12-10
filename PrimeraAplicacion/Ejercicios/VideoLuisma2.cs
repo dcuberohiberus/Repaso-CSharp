@@ -17,6 +17,9 @@ namespace PrimeraAplicacion.Ejercicios
         }
 
 
+        //Niveles de acceso de los métodos buscado en Copilot:
+        //private,protected,internal,public //todavía no aparecen en el curso
+
 
     }
 }
