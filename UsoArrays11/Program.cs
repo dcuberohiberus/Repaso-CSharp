@@ -19,22 +19,24 @@ namespace UsoArrays11
 
             int[] edades = { 15, 32, 132, 2 };
             //int[] edades = new int[5] { 15, 32, 132, 2, 3134 };
-            Console.WriteLine(edades[3]);
+            //Console.WriteLine(edades[3]);
 
             //-- =======================
             //--  36.Arrays II - Implícitos
             //-- =======================   
             //var datos = new[] {"juan","diaz","españa"};
 
-            var valores = new[] { 15, 25, 32.12, 34 };
+            var valores = new[] { 15, 25, 32.12, 34, 3, 1, 2, 3 };
 
             //array de objetos
-            Empleados[] arrayEmpleados = new Empleados[2];
+            Empleados[] arrayEmpleados = new Empleados[3];
             arrayEmpleados[0] = new Empleados("Sara", 33);
 
             Empleados Ana = new Empleados("Ana", 28);
             arrayEmpleados[1] = Ana;
 
+            Empleados e = new Empleados("Manu", 50);
+            arrayEmpleados[2] = e;
 
             //array de tipos o clases anonimas
             var personas = new[]
@@ -44,21 +46,65 @@ namespace UsoArrays11
                 new{Nombre="ffasfaf", Edad=15},
             };
 
-            Console.WriteLine(personas[0].Edad);
+            //Console.WriteLine(personas[0].Edad);
+            //for (int i = 0; i < 5; i++)
+            //{
+            //    Console.WriteLine(valores[i]);
+            //}
+
+            //-- =======================
+            //--  39. Foreach loop. Arrays IV
+            //-- =======================
+
+            //for (int i = 0; i < valores.Length; i++)
+            //{
+            //    Console.WriteLine(valores[i]);
+            //}
+
+            //for (int i = 0; i < arrayEmpleados.Length; i++)
+            //{
+            //    Console.WriteLine(arrayEmpleados[i].getInfo());
+
+            //}
 
 
-        }//end:ckass
+            foreach (Empleados var in arrayEmpleados)
+            {
+                Console.WriteLine(var.getInfo());
+            }
+
+            foreach (double variable in valores)
+            {
+                Console.WriteLine(variable);
+            }
+
+
+
+
+        }//end:main
+
+
+
 
         class Empleados
         {
-            string nombre;
-            int edad;
+            public string nombre;
+            public int edad;
             
             public Empleados(String nombre, int edad)
             {
                 this.nombre = nombre;
                 this.edad = edad;
             }
+
+            public String getInfo()
+            {
+                return "Nombre: " + this.nombre + " - Edad: " + this.edad;
+            }
+
+
         }
+
+
     }
 }
