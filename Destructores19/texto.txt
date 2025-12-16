@@ -1,0 +1,4 @@
+Hola
+ésto es una prueba
+de lectura de líneas
+en fichero .txt

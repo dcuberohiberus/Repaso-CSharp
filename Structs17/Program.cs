@@ -1,19 +1,17 @@
-﻿namespace StructsYEnum17
+﻿namespace Structs17
 {
     internal class Program
     {
         private static void Main(string[] args)
         {
-
             Empleado empleado1 = new Empleado(1200, 250);
             empleado1.cambiaSalario(empleado1, 100);
-
             Console.WriteLine(empleado1);
         }//end:main
 
         //Clases: Empleado se almacena en HEAP. y empleado1 referencia en el STACK que apunta al HEAP.
         //Si hago cambios en empleado1 se ven reflejeados en el HEAP
-        //HEAP: Disponibles durante toda la ejcución: Variables super, objetos, 
+        //HEAP: Disponibles durante toda la ejcución: Variables super, objetos,
         //Struct. No se verán reflejados los cambios en la estructura de Empleado en HEAP, se quedan en la copia de empleado1 del STACK.
         //STACK: LIFO:Numeros complejos, puntos tridimimensionales, instancias que no cambien.
         //public class Empleado
